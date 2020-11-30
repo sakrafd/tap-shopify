@@ -482,10 +482,15 @@
   },
   "line_item": {
     "properties": {
-      "applied_discounts": {},
-      "total_discount_set": {},
-      "pre_tax_price_set": {},
-      "price_set": {},
+      "total_discount_set": {
+        "$ref": "definitions.json#/price_set"
+      },
+      "pre_tax_price_set": {
+        "$ref": "definitions.json#/price_set"
+      },
+      "price_set": {
+        "$ref": "definitions.json#/price_set"
+      },
       "grams": {
         "type": [
           "null",
@@ -541,37 +546,29 @@
         ]
       },
       "properties": {
-        "anyOf": [
-          {
-            "items": {
-              "properties": {
-                "name": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "value": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                }
-              },
+        "items": {
+          "properties": {
+            "name": {
               "type": [
                 "null",
-                "object"
+                "string"
               ]
             },
-            "type": [
-              "null",
-              "array"
-            ]
+            "value": {
+              "type": [
+                "null",
+                "string"
+              ]
+            }
           },
-          {
-            "properties": {},
-            "type": ["null", "object"]
-          }
+          "type": [
+            "null",
+            "object"
+          ]
+        },
+        "type": [
+          "null",
+          "array"
         ]
       },
       "tax_code": {
@@ -589,7 +586,9 @@
                 "integer"
               ]
             },
-            "amount_set": {},
+            "amount_set": {
+              "$ref": "definitions.json#/price_set"
+            },
             "amount": {
               "type": [
                 "null",
@@ -657,7 +656,7 @@
         ]
       },
       "id": {
-        "type": ["null", "integer", "string"]
+        "type": ["null", "string"]
       },
       "taxable": {
         "type": [
@@ -824,6 +823,7 @@
     "items": {
       "properties": {
         "price_set": {
+          "$ref": "definitions.json#/price_set"
         },
         "price": {
           "type": [
@@ -878,6 +878,39 @@
     "type": [
       "null",
       "array"
+    ]
+  },
+  "price_set_price": {
+    "type": ["null", "object"],
+    "properties": {
+      "amount": {
+        "type": ["null", "string"]
+      },
+      "currency_code": {
+        "type": ["null", "string"]
+      }
+    }
+  },
+  "price_set": {
+    "properties": {
+      "shop_money": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "$ref": "definitions.json#/price_set_price"
+      },
+      "presentment_money": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "$ref": "definitions.json#/price_set_price"
+      }
+    },
+    "type": [
+      "null",
+      "object"
     ]
   }
 }

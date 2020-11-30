@@ -1,7 +1,32 @@
 {
   "type": "object",
   "properties": {
-    "note_attributes": {},
+    "note_attributes": {
+      "items": {
+        "properties": {
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "value": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": [
+          "null",
+          "object"
+        ]
+      },
+      "type": [
+        "null",
+        "array"
+      ]
+    },
     "location_id": {
       "type": [
         "null",
@@ -314,8 +339,6 @@
           "object"
         ],
         "properties": {
-          "applied_discounts": {},
-          "custom_tax_lines": {},
           "phone": {
             "type": [
               "null",

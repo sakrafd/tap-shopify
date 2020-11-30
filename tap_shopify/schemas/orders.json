@@ -6,12 +6,24 @@
           "string"
         ]
     },
-    "subtotal_price_set": {},
-    "total_discounts_set": {},
-    "total_line_items_price_set": {},
-    "total_price_set": {},
-    "total_shipping_price_set": {},
-    "total_tax_set": {},
+    "subtotal_price_set": {
+      "$ref": "definitions.json#/price_set"
+    },
+    "total_discounts_set": {
+      "$ref": "definitions.json#/price_set"
+    },
+    "total_line_items_price_set": {
+      "$ref": "definitions.json#/price_set"
+    },
+    "total_price_set": {
+      "$ref": "definitions.json#/price_set"
+    },
+    "total_shipping_price_set": {
+      "$ref": "definitions.json#/price_set"
+    },
+    "total_tax_set": {
+      "$ref": "definitions.json#/price_set"
+    },
     "total_price": {
       "type": [
         "null",
@@ -54,9 +66,6 @@
       ],
       "multipleOf": 1e-10
     },
-    "order_adjustments": {
-      "$ref": "definitions.json#/order_adjustments"
-    },
     "shipping_lines": {
       "items": {
         "properties": {
@@ -69,8 +78,12 @@
               "string"
             ]
           },
-          "discounted_price_set": {},
-          "price_set": {},
+          "discounted_price_set": {
+            "$ref": "definitions.json#/price_set"
+          },
+          "price_set": {
+            "$ref": "definitions.json#/price_set"
+          },
           "price": {
             "type": [
               "null",
