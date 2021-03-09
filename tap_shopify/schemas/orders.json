@@ -1,10 +1,10 @@
 {
   "properties": {
     "presentment_currency": {
-        "type": [
-          "null",
-          "string"
-        ]
+      "type": [
+        "null",
+        "string"
+      ]
     },
     "subtotal_price_set": {
       "$ref": "definitions.json#/price_set"
@@ -259,13 +259,22 @@
             ]
           },
           "receipt": {
-            "type": ["null", "object"],
+            "type": [
+              "null",
+              "object"
+            ],
             "properties": {
               "testcase": {
-                "type": ["null", "boolean"]
+                "type": [
+                  "null",
+                  "boolean"
+                ]
               },
               "authorization": {
-                "type": ["null", "string"]
+                "type": [
+                  "null",
+                  "string"
+                ]
               }
             }
           },
@@ -1122,6 +1131,19 @@
         "null",
         "string"
       ]
+    },
+    "location": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "total_refunded": {
+      "type": [
+        "null",
+        "number"
+      ],
+      "multipleOf": 1e-10
     }
   },
   "type": "object"

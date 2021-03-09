@@ -301,7 +301,299 @@
       "multipleOf": 1e-10
     },
     "line_items": {
-      "$ref": "definitions.json#/line_items"
+      "items": {
+        "properties": {
+          "total_discount_set": {
+            "$ref": "definitions.json#/price_set"
+          },
+          "pre_tax_price_set": {
+            "$ref": "definitions.json#/price_set"
+          },
+          "price_set": {
+            "$ref": "definitions.json#/price_set"
+          },
+          "grams": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "id__it": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "compare_at_price": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "destination_location_id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "key": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "line_price": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "origin_location_id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "applied_discount": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "applied_discounts": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "properties": {
+                "amount": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "description": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ]
+            }
+          },
+          "fulfillable_quantity": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "variant_title": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "properties": {
+            "items": {
+              "properties": {
+                "name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "value": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ]
+            },
+            "type": [
+              "null",
+              "array"
+            ]
+          },
+          "tax_code": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "discount_allocations": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "properties": {
+                "discount_application_index": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "amount_set": {
+                  "$ref": "definitions.json#/price_set"
+                },
+                "amount": {
+                  "type": [
+                    "null",
+                    "number"
+                  ]
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ]
+            }
+          },
+          "admin_graphql_api_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "pre_tax_price": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "sku": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "product_exists": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "total_discount": {
+            "type": [
+              "null",
+              "number"
+            ],
+            "multipleOf": 1e-10
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "fulfillment_status": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "gift_card": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "taxable": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "vendor": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "tax_lines": {
+            "$ref": "definitions.json#/tax_lines"
+          },
+          "origin_location": {
+            "$ref": "definitions.json#/location"
+          },
+          "price": {
+            "type": [
+              "null",
+              "number"
+            ],
+            "multipleOf": 1e-10
+          },
+          "requires_shipping": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "fulfillment_service": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "variant_inventory_management": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "title": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "destination_location": {
+            "$ref": "definitions.json#/location"
+          },
+          "quantity": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "product_id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "variant_id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": [
+          "null",
+          "object"
+        ]
+      },
+      "type": [
+        "null",
+        "array"
+      ]
     },
     "source_url": {
       "type": [
@@ -408,6 +700,71 @@
               "null",
               "string"
             ]
+          },
+          "applied_discounts": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "properties": {
+                "amount": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "description": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "script_version_id": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ]
+            }
+          },
+          "custom_tax_lines": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "properties": {
+                "rate": {
+                  "type": [
+                    "null",
+                    "number"
+                  ],
+                  "multipleOf": 1e-10
+                },
+                "price": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "title": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ]
+            }
           },
           "markup": {
             "type": [

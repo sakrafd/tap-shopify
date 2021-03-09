@@ -404,7 +404,7 @@
       "accepts_marketing_updated_at": {
         "anyOf": [
           {
-            "type": "string" ,
+            "type": "string",
             "format": "date-time"
           },
           {
@@ -656,7 +656,10 @@
         ]
       },
       "id": {
-        "type": ["null", "string"]
+        "type": [
+          "null",
+          "integer"
+        ]
       },
       "taxable": {
         "type": [
@@ -881,13 +884,22 @@
     ]
   },
   "price_set_price": {
-    "type": ["null", "object"],
+    "type": [
+      "null",
+      "object"
+    ],
     "properties": {
       "amount": {
-        "type": ["null", "string"]
+        "type": [
+          "null",
+          "string"
+        ]
       },
       "currency_code": {
-        "type": ["null", "string"]
+        "type": [
+          "null",
+          "string"
+        ]
       }
     }
   },

@@ -116,7 +116,7 @@
         "array"
       ],
       "items": {
-        "$ref": "definitions.json#/image"        
+        "$ref": "definitions.json#/image"
       }
     },
     "template_suffix": {
