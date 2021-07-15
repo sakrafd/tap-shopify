@@ -546,29 +546,53 @@
         ]
       },
       "properties": {
-        "items": {
-          "properties": {
-            "name": {
+        "anyOf": [
+          {
+            "items": {
+              "properties": {
+                "name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "value": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
               "type": [
                 "null",
-                "string"
+                "object"
               ]
             },
-            "value": {
-              "type": [
-                "null",
-                "string"
-              ]
-            }
+            "type": [
+              "null",
+              "array"
+            ]
           },
-          "type": [
-            "null",
-            "object"
-          ]
-        },
-        "type": [
-          "null",
-          "array"
+          {
+            "properties": {
+              "name": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "value": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "type": [
+              "null",
+              "object"
+            ]
+          }
         ]
       },
       "tax_code": {
